@@ -17,7 +17,7 @@ from QuaternionKalmanFilter import eskf_filter_quaternions
 if len(sys.argv) > 1:
     DIRECTORY = sys.argv[1]
 else:
-    print("Error: Please provide a directory path as an argument.")
+    print("Running entered directory")
     DIRECTORY = "Aug1Flight1"
 
 
