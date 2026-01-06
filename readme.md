@@ -98,7 +98,7 @@ readme.md
    ```
 
 2. **Run the Radar Program**  
-   Move the entire pi directory to your raspberry pi host, connected to the Pulson through UDP. You can achieve this through SCP or a button in `ssh_gui.py`
+   Move the entire pi directory to your Raspberry Pi host, connected to the Pulson through UDP. You can achieve this through SCP or a button in `ssh_gui.py`
    
    Edit the IP address in `pi/main.py` if needed, then run:
    ```sh
