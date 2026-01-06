@@ -1,28 +1,28 @@
 # Team 4 BWSI SAR 2025 DEMO Code 
 
 
-HELLO MIT! This is not the original Repository; the original repository is private and is not controlled by me. However, as it was our team's code, I have transferred part of our code to demonstrate the level of coding that we have done. I will include the commit histories form the original repository in the media within the portfolio.
+HELLO! This is not the original Repository; the original repository is private and is not controlled by me. However, as it was our team's code, I have transferred part of our code to demonstrate the level of coding that we have done. I will include the commit histories from the original repository in the media within the portfolio.
 
-In order to make it easy, I have put together a demo version that can run the main parts of our code consistently. Please note that this is stemming from an older commit, and new commits were made to improve our code, such as GUIs. In the past, we had introduced Gradient Ascent algorithms to detect peaks, but we have remoed that as it was more computationally heavy, and proved unnecessary. 
+In order to make it easy, I have put together a demo version that can run the main parts of our code consistently. Please note that this is stemming from an older commit, and new commits were made to improve our code, such as GUIs. In the past, we had introduced Gradient Ascent algorithms to detect peaks, but we have removed that as it was more computationally heavy and proved unnecessary. 
 
 
 This repository contains code for Team 4's Synthetic Aperture Radar (SAR) project for BWSI 2025. 
 
-This system successfully generates detailed images when conducting indoor synthetic apeture scans from a TDSR Pulson452 system mounted on a hexcopter, with positioning data generated from an Optitrack Motion Capture system. Individual soft drink cans can be easily resolved when placed 40-50cm apart. 
+This system successfully generates detailed images when conducting indoor synthetic aperture scans from a TDSR Pulson452 system mounted on a hexcopter, with positioning data generated from an Optitrack Motion Capture system. Individual soft drink cans can be easily resolved when placed 40-50cm apart. 
 
 The system has a variety of advanced features, including quaternion boresight positioning during alignment, oversampling protection during backprojection, and Hilbert transform complex data extraction.  
 
 
-To run the the demo, I Have set up the following files:
+To run the demo, I have set up the following files:
 
 - RTI_plotter.py - Plots a Range-Time-Intensity Plot, which is used to identify strong reflective objects over time.
 
-- alignment.py - AUTOMATICALLY aligns the Range-time-intensity data received from the Radar with the Motion Capture system data in order to create a pickle file. 
+- alignment.py - AUTOMATICALLY aligns the Range-time-intensity data received from the Radar with the Motion Capture system data to create a pickle file. 
 
 - npBackProjectBlob.py - Uses the alignment_data.pkl file from data directories to create a 2 Map with Intensity Color map.
 
 
-To be able to run these, I have included data collected from 4 of our trials, which are the four Aug1 directories at the top. The Batch directory and aligned_data.pkl within Flight 1 and 4 are created upon running alignment.py on a chosen directory. To allo wyou to test this, I have left Flight2 and Flight3 alone. 
+To be able to run these, I have included data collected from 4 of our trials, which are the four Aug1 directories at the top. The Batch directory and aligned_data.pkl within Flight 1 and 4 are created upon running alignment.py on a chosen directory. To allow you to test this, I have left Flight2 and Flight3 alone. 
 
 - To choose which directory to run for alignment.py, please look for line 21 in the file.
 
