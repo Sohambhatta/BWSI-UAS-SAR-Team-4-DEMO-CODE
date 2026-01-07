@@ -1,14 +1,20 @@
 # Ignore all pickle and data files
 *.pkl
+# Allow flight trial data
+!Aug1Flight*/BATCH/*.pkl
 *.npz
 *.h5
 *.bin
 *.json
+# Allow flight trial data
+!Aug1Flight*/metadata.json
 data/
 output/
 __pycache__/
 DATAS/
 *.csv
+# Allow flight trial data
+!Aug1Flight*/pos.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
